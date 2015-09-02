@@ -43,21 +43,20 @@
 
         <section>
             <!-- use of html5 local/session storage -->
-            <br/>
             <p>use of html5 local/session storage - value of session storage 'testItem' is:</p>
             <div id="sessionStorageTest"></div>
-            <script>
-                this.document.getElementById('sessionStorageTest').innerText = this.sessionStorage.getItem('testItem');
-            </script>
 
             <!-- basic javascript for updating a dom node's content -->
-            <br/>
             <p>basic javascript for updating a dom node's content - private var access through closure - var value = <div id='privateVarDiv'></div></p>
-            <script>
-                model.setPrivateVar(11);
 
-                this.document.getElementById('privateVarDiv').innerText = model.getPrivateVar();
-            </script>
+            <!-- element to modify with javascript -->
+            <p>an element we can update with javascript</p>
+            <div id="javaScriptDiv"></div>
+
+            <!-- element to modify with jquery -->
+            <p>an element we can update with jquery</p>
+            <div id="jqueryDiv"></div>
+
         </section>
 
         <br/>
