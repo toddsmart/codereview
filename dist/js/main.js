@@ -77,4 +77,51 @@ $(document).ready(function () {
     controller.updateJavaScriptDiv('This is content for the javascript div - model value is:');
     model.set(model.get() + 1);
     controller.updateJqueryDiv('This is content for the javascript div - model value is:');
+
+
+    /**
+     * some Q&A
+     * @param text
+     */
+    //Question:
+    //    (function() {
+    //        console.log(1);
+    //        setTimeout(function(){console.log(2)}, 1000);
+    //        setTimeout(function(){console.log(3)}, 0);
+    //        console.log(4);
+    //    })();
+    //
+    //Answer: 1, 4, 3, 2
+    //
+    //
+    //Question:
+    //    for (var i = 0; i < 5; i++) {
+    //        var btn = document.createElement('button');
+    //        btn.appendChild(document.createTextNode('Button ' + i));
+    //        btn.addEventListener('click', function()
+    //        {
+    //            console.log(i);
+    //        });
+    //        document.body.appendChild(btn);
+    //    }
+    //
+    //Answer: 5
+    //
+    //
+    //Question: write a palindrone function
+    //
+    //Answer:
+    //var palindrone = function (text) {
+    //    var firstHalf,
+    //        secondHalf,
+    //        halfLength = text.length / 2;
+    //
+    //    firstHalf = text.substr(0, halfLength).split('');
+    //    secondHalf = text.substr(halfLength).split('');
+    //
+    //    return firstHalf.reverse() === secondHalf;
+    //};
+    //
+    //console.log(palindrone('asdffdsa'));
+
 });
