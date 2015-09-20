@@ -148,6 +148,7 @@ gulp.task('lint:js', function () {
 });
 
 
+
 // ---------------------------------------------------------------------
 // | Main tasks                                                        |
 // ---------------------------------------------------------------------
@@ -172,4 +173,4 @@ gulp.task('build', function (done) {
     done);
 });
 
-gulp.task('default', ['build', 'watch']);
+gulp.task('default', ['build', 'lint:js', 'watch']);
